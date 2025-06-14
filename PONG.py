@@ -96,11 +96,11 @@ juego_activo = True
 while juego_activo:
     ventana.update()
 
-    # Mover la pelota
+
     pelota.setx(pelota.xcor() + pelota.dx)
     pelota.sety(pelota.ycor() + pelota.dy)
 
-    # Rebotar en bordes
+    
     if pelota.ycor() > 290:
         pelota.sety(290)
         pelota.dy *= -1
